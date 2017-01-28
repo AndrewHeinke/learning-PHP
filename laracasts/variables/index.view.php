@@ -19,15 +19,21 @@
       <h1></h1>
     </header>
     <ul>
-      <?php
-      foreach ($animals as $animal) {
-        echo "<li>$animal</li>";
-      } ?>
-      <?php foreach ($animals as $animal) : ?>
-        <li><?= $animal; ?></li>
-      <?php endforeach ?>
+      <li><strong>Title of Task: </strong> <?= $task['title']; ?></li>
+      <li><strong>Date Due: </strong> <?= $task['due']; ?></li>
+      <li><strong>Person Responsible: </strong> <?= $task['assigned_to']; ?></li>
+      <li><strong>Status: </strong>
+        <?php
+          if ($task['completed']) {
+            echo "Completed &#10003;";
+          }
+          else {
+            echo "Incomplete";
+          }
 
+        ?>
 
+      </li>
     </ul>
 
   </body>
