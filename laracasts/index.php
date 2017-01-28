@@ -1,4 +1,5 @@
 <?php
+require 'functions.php';
 
 $task = [
   'title' => 'go to store',
@@ -7,6 +8,10 @@ $task = [
   'completed' => true,
 
 ];
+
+
+
+$answer = oldEnough(22);
 
 $person['name'] = 'Andrew';
 

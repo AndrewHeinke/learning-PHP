@@ -34,6 +34,17 @@
         ?>
 
       </li>
+      <li><strong>Is this person old enough to enter the bar? </strong>
+        <?php
+          if ($answer === true) {
+            echo "The person is old enough to enter the bar";
+          }
+          else {
+            echo "This person is to young to enter the bar";
+          }
+        ?>
+
+      </li>
     </ul>
 
   </body>
